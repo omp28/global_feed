@@ -62,7 +62,7 @@ export default async (req, res) => {
       description: item.snippet.description,
       comments: commentsData[index].comments,
     }));
-    console.log("Result:", result);
+
     res.status(200).json(result);
   } catch (error) {
     console.error("Error fetching data from YouTube API:", error);
